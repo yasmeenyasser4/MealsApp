@@ -1,0 +1,35 @@
+img {
+  transform: translateY(-20%) rotate(0);
+  box-shadow: 0 10px 15px -3px gray, 0 4px 6px -4px gray;
+  transition: all 0.7s;
+}
+
+.text-head h3, .text-head h5 {
+  font-family: "Pacifico", serif;
+  transform: translateY(-100%);
+}
+.text-head h5 {
+  color: rgb(5, 150, 105);
+}
+
+.inner {
+  transition: all 0.4s;
+}
+
+.inner:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px -3px gray, 0 4px 6px -4px gray;
+}
+.inner:hover img {
+  transform: translateY(-20%) rotate(360deg);
+}
+
+.btn {
+  background-color: rgb(33, 186, 117);
+  border: none;
+  transition: all 0.4s;
+}
+.btn:hover {
+  background-color: #059669;
+  transform: scale(1.1);
+}/*# sourceMappingURL=meals.component.css.map */

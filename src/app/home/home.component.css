@@ -1,0 +1,19 @@
+section {
+  background-color: hsl(40, 21%, 95%);
+  margin: 0;
+}
+
+h1 {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 800;
+  background-image: linear-gradient(to right, #f5a037, #ac412c);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=home.component.css.map */

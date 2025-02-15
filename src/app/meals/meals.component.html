@@ -1,0 +1,25 @@
+<section class="border-top py-5">
+
+  <div class="row gy-5">
+   @for (meal of meals; track $index) {
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 position-relative">
+        <div class=" inner py-3 px-5 bg-white mt-5 rounded-5 ">
+            <figure class="text-center">
+                <img [src]="meal.strMealThumb" [alt]="meal.strMeal" class="w-100 rounded-circle ">
+            </figure>
+            <div class=" text-head text-center">
+                <h3>{{meal.strMeal.split(' ').slice(0, 2).join(' ')}}</h3>
+                
+                <h5> {{meal.strArea}}</h5>
+            </div>
+            <div class="text-center">
+                <a [routerLink]="['/details', meal.idMeal]">
+                    <button class="btn btn-success rounded-pill px-5">View Recipe</button>
+                  </a>                
+            </div>
+        </div>
+
+    </div>
+   }
+  </div>
+</section>

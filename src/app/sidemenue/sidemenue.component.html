@@ -1,0 +1,22 @@
+<section >
+    <button class="menu-button" *ngIf="isSmallScreen()" (click)="toggleMenu()">☰</button>
+
+
+    <div class="overlay" *ngIf="isMenuOpen() && isSmallScreen()" (click)="toggleMenu()"></div>
+    <div class="side-menu py-3 px-2" [class.open]="isMenuOpen() || !isSmallScreen()">
+        <div class=" vh-100 px-2">
+            <img src="logo.png" alt="eat" width="100%">
+            <div>
+                <ul class="ps-0 mt-4">
+                    <li class="active " routerLink="home/meals/ " ><i class="fa-solid fa-utensils fs-5 text-white"></i> <span
+                            class="h5 text-white">Meals</span></li>
+                    <li><i class="fa-solid fa-utensils fs-5"></i> <span class="h5">Intgredients</span></li>
+                    <li><i class="fa-solid fa-utensils fs-5"></i> <span class="h5">Area</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>

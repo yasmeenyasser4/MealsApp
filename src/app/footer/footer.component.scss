@@ -1,0 +1,38 @@
+
+.footer{
+    position: relative;
+    z-index: 99999;
+}
+
+.pecipe{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 700;
+   
+ 
+}
+a{
+    color: black;
+}
+
+.route{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 700;
+    color:blue;
+}
+.text{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(107 114 128);
+}
+
+
+
+@media (max-width: 768px){
+    .footer{
+        z-index: 1;
+    }
+    .text{
+        padding: 0 10px;
+    }
+}

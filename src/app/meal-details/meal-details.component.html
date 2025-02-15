@@ -1,0 +1,74 @@
+<section class="mealDetails min-vh-100 pb-3">
+    <div class=" pt-5 px-4">
+        <div>
+            <h1>{{meal.strMeal}}</h1>
+        </div>
+        <div class="row gy-4">
+           
+                <div class="col-sm-12 col-lg-4">
+                    <div>
+                        <div class="mb-5">
+                            <img  [src]="meal.strMealThumb" alt="{{ meal.strMeal }}" class="w-100 rounded-4">
+                        </div>
+                        <div class=" gx-3 text-center">
+                            <a [href]="meal.strYoutube" target="_blank" ><button class="yotube btn btn-danger rounded-2 me-3 "><i
+                                class="fa-brands fa-youtube me-2"></i>youtube</button></a>
+                           <a [href]="meal.strSource" target="_blank" > <button class="source btn btn-success rounded-3"><i
+                            class="fa-solid fa-globe me-2"></i>source</button></a>
+                        </div>
+    
+    
+                    </div>
+    
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div>
+                        <p class="descrip">{{meal.strInstructions}}</p>
+                    </div>
+    
+                </div>
+                <div class=" menu col-sm-12  col-lg-4">
+                    <div class="bg-white py-5 px-3 rounded-3">
+                        <div class="head">
+                            <h3>Ingredients</h3>
+                        </div>
+                        <div class="pt-4">
+                            <div class="information d-flex flex-wrap justify-content-between py-2">
+                                <span>{{meal.strIngredient1}}:</span>
+                                <span>{{meal. strMeasure1}}</span>
+                            </div>
+                            <div class="information d-flex flex-wrap justify-content-between py-2">
+                                <span>{{meal.strIngredient2}}:</span>
+                                <span>{{meal. strMeasure2}}</span>
+                            </div>
+                            <div class="information d-flex flex-wrap justify-content-between py-2">
+                                <span>{{meal.strIngredient3}}:</span>
+                                <span>{{meal. strMeasure3}}</span>
+                            </div>
+                            <div class="information d-flex flex-wrap justify-content-between py-2">
+                                <span>{{meal.strIngredient4}}:</span>
+                                <span>{{meal. strMeasure4}}</span>
+                            </div>
+                            <div class="information d-flex flex-wrap justify-content-between py-2">
+                                <span>{{meal.strIngredient5}}:</span>
+                                <span>{{meal. strMeasure5}}</span>
+                            </div>
+                            <div class="information d-flex flex-wrap justify-content-between py-2">
+                                <span>{{meal.strIngredient6}}:</span>
+                                <span>{{meal. strMeasure6}}</span>
+                            </div>
+                            <div class="information d-flex flex-wrap justify-content-between py-2">
+                                <span>{{meal.strIngredient7}}:</span>
+                                <span>{{meal. strMeasure7}}</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            
+        </div>
+
+    </div>
+</section>

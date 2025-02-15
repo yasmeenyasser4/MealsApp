@@ -1,0 +1,49 @@
+img {
+transform: translateY(-20%) rotate(0) ;
+box-shadow:  0 10px 15px -3px gray, 0 4px 6px -4px gray;
+transition: all 0.7s;
+
+
+}
+
+
+
+$color-main:rgb(5, 150, 105);
+.text-head{
+
+    h3,h5{
+        font-family: "Pacifico", serif;
+        transform: translateY(-40%);
+        font-size: 20px;  
+    }
+
+    h5 {
+        color: $color-main;
+    }
+}
+.inner{
+    transition:all 0.4s ;
+}
+.inner:hover{
+    transform: scale(1.1);
+    box-shadow:  0 10px 15px -3px gray, 0 4px 6px -4px gray;
+    img{
+        
+        transform: translateY(-20%) rotate(360deg);
+    }
+   
+}
+.btn{
+    background-color: rgb(33 186 117);
+    border: none;
+    transition: all 0.4s;
+    &:hover{
+        background-color: #059669;
+        transform: scale(1.1);
+
+    }
+}
+
+
+
+

@@ -1,0 +1,27 @@
+<section class="pt-5">
+    <div class="menu-container">
+     @if (!isSmallScreen()) {
+        <ul>
+          @for (item of items; track $index) {
+            <li>
+              <a class="rounded-pill" 
+                 [routerLink]="['/home/meals', item.id]" 
+                 routerLinkActive="bg-black text-white">
+                {{ item.name }}
+              </a>
+            </li>
+          }
+        </ul>
+      }
+       @else {
+        <select class="form-select" (change)="navigateToMeal($event)">
+          <option value="" disabled selected>Choose a meal</option>
+          @for (item of items; track $index) {
+            <option [value]="item.id">{{ item.name }}</option>
+          }
+        </select>
+      }
+      
+    
+    </div>
+</section>

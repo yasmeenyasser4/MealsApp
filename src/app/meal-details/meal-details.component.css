@@ -1,0 +1,51 @@
+.mealDetails {
+  background-color: hsl(40, 21%, 95%);
+  margin: 0;
+}
+
+h1 {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 800;
+}
+
+.source {
+  background-color: rgb(33, 186, 117);
+  border: none !important;
+}
+
+.yotube {
+  background-color: #DC2626;
+  border: none !important;
+}
+
+.descrip {
+  font-family: "Shantell Sans", serif;
+}
+
+h3 {
+  font-family: "Shantell Sans", serif;
+  font-weight: 800;
+}
+
+.head {
+  border-bottom: 4px solid #E5E7EB;
+}
+
+.information {
+  border-bottom: 2px solid #E5E7EB;
+}
+
+span {
+  font-family: "Shantell Sans", serif;
+  font-weight: 600;
+}
+
+.menu {
+  transform: translateY(-10%);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    transform: translateY(0%);
+  }
+}/*# sourceMappingURL=meal-details.component.css.map */
